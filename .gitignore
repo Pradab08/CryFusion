@@ -1,0 +1,44 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.pyo
+*.pkl
+*.h5
+*.pt
+*.joblib
+
+# Virtual Environments
+venv/
+.venv/
+env/
+
+# Jupyter
+*.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# ===== Node / React =====
+node_modules/
+build/
+dist/
+.cache/
+*.lock
+
+# ===== Datasets / Media =====
+*.csv
+*.tsv
+*.json
+*.wav
+*.mp3
+*.mp4
+*.zip
+*.tar
+*.gz
+*.npy
+
+# ===== OS / Editor =====
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
