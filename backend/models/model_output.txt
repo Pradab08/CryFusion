@@ -1,0 +1,281 @@
+✅ Loaded dataset: (2650, 40, 300) (2650,)
+
+📊 Class Distribution after augmentation:
+belly_pain: 444
+burping: 432
+discomfort: 720
+hungry: 382
+tired: 672
+
+⚖️ Computed Class Weights: {0: np.float64(1.1936936936936937), 1: np.float64(1.2268518518518519), 2: np.float644(0.7361111111111112), 3: np.float64(1.387434554973822), 4: np.float64(0.7886904761904762)}
+E:\Capstone Project\CryFusion Project\backend\.venv\Lib\site-packages\keras\src\layers\convolutional\base_conv.py:113: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(activity_regularizer=activity_regularizer, **kwargs)
+2025-08-17 20:04:11.011220: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Epoch 1/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 439ms/step - accuracy: 0.2171 - loss: 1.6073 
+Epoch 1: val_loss improved from None to 1.60087, saving model to models/cnn_lstm.keras
+67/67 ━━━━━━━━━━━━━━━━━━━━ 34s 469ms/step - accuracy: 0.2368 - loss: 1.5939 - val_accuracy: 0.2472 - val_loss: 1.6009 - learning_rate: 0.0010
+Epoch 2/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 440ms/step - accuracy: 0.3227 - loss: 1.4877 
+Epoch 2: val_loss improved from 1.60087 to 1.42881, saving model to models/cnn_lstm.keras
+67/67 ━━━━━━━━━━━━━━━━━━━━ 31s 465ms/step - accuracy: 0.3274 - loss: 1.4648 - val_accuracy: 0.3868 - val_loss: 1.4288 - learning_rate: 0.0010
+Epoch 3/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 447ms/step - accuracy: 0.3663 - loss: 1.3999 
+Epoch 3: val_loss improved from 1.42881 to 1.32751, saving model to models/cnn_lstm.keras
+67/67 ━━━━━━━━━━━━━━━━━━━━ 32s 472ms/step - accuracy: 0.3745 - loss: 1.3775 - val_accuracy: 0.4189 - val_loss: 1.3275 - learning_rate: 0.0010
+Epoch 4/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 432ms/step - accuracy: 0.3861 - loss: 1.3918 
+Epoch 4: val_loss improved from 1.32751 to 1.29026, saving model to models/cnn_lstm.keras
+67/67 ━━━━━━━━━━━━━━━━━━━━ 31s 457ms/step - accuracy: 0.4123 - loss: 1.3348 - val_accuracy: 0.4434 - val_loss: 1.2903 - learning_rate: 0.0010
+Epoch 5/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 443ms/step - accuracy: 0.4307 - loss: 1.2754 
+Epoch 5: val_loss improved from 1.29026 to 1.20259, saving model to models/cnn_lstm.keras
+67/67 ━━━━━━━━━━━━━━━━━━━━ 32s 470ms/step - accuracy: 0.4415 - loss: 1.2357 - val_accuracy: 0.4679 - val_loss: 1.2026 - learning_rate: 0.0010
+Epoch 6/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 436ms/step - accuracy: 0.4720 - loss: 1.1956 
+Epoch 6: val_loss improved from 1.20259 to 1.16168, saving model to models/cnn_lstm.keras
+67/67 ━━━━━━━━━━━━━━━━━━━━ 31s 461ms/step - accuracy: 0.4684 - loss: 1.2067 - val_accuracy: 0.5057 - val_loss: 1.1617 - learning_rate: 0.0010
+Epoch 7/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 439ms/step - accuracy: 0.4929 - loss: 1.1644 
+Epoch 7: val_loss improved from 1.16168 to 1.12869, saving model to models/cnn_lstm.keras
+67/67 ━━━━━━━━━━━━━━━━━━━━ 31s 464ms/step - accuracy: 0.5061 - loss: 1.1430 - val_accuracy: 0.5302 - val_loss: 1.1287 - learning_rate: 0.0010
+Epoch 8/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 447ms/step - accuracy: 0.5127 - loss: 1.1105 
+Epoch 8: val_loss improved from 1.12869 to 1.10834, saving model to models/cnn_lstm.keras
+67/67 ━━━━━━━━━━━━━━━━━━━━ 32s 472ms/step - accuracy: 0.5099 - loss: 1.0989 - val_accuracy: 0.5396 - val_loss: 1.1083 - learning_rate: 0.0010
+Epoch 9/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 444ms/step - accuracy: 0.5192 - loss: 1.0532 
+Epoch 9: val_loss improved from 1.10834 to 1.01356, saving model to models/cnn_lstm.keras
+67/67 ━━━━━━━━━━━━━━━━━━━━ 31s 470ms/step - accuracy: 0.5448 - loss: 1.0226 - val_accuracy: 0.5887 - val_loss: 1.0136 - learning_rate: 0.0010
+Epoch 10/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 448ms/step - accuracy: 0.5832 - loss: 0.9648 
+Epoch 10: val_loss did not improve from 1.01356
+67/67 ━━━━━━━━━━━━━━━━━━━━ 32s 475ms/step - accuracy: 0.5816 - loss: 0.9762 - val_accuracy: 0.5604 - val_loss: 1.0298 - learning_rate: 0.0010
+Epoch 11/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 435ms/step - accuracy: 0.6038 - loss: 0.9295 
+Epoch 11: val_loss improved from 1.01356 to 0.95189, saving model to models/cnn_lstm.keras
+67/67 ━━━━━━━━━━━━━━━━━━━━ 31s 460ms/step - accuracy: 0.6146 - loss: 0.9327 - val_accuracy: 0.6189 - val_loss: 0.9519 - learning_rate: 0.0010
+Epoch 12/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 451ms/step - accuracy: 0.6361 - loss: 0.8357 
+Epoch 12: val_loss improved from 0.95189 to 0.90696, saving model to models/cnn_lstm.keras
+67/67 ━━━━━━━━━━━━━━━━━━━━ 32s 477ms/step - accuracy: 0.6401 - loss: 0.8570 - val_accuracy: 0.6340 - val_loss: 0.9070 - learning_rate: 0.0010
+Epoch 13/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 433ms/step - accuracy: 0.6653 - loss: 0.8285 
+Epoch 13: val_loss improved from 0.90696 to 0.85239, saving model to models/cnn_lstm.keras
+67/67 ━━━━━━━━━━━━━━━━━━━━ 31s 458ms/step - accuracy: 0.6717 - loss: 0.8149 - val_accuracy: 0.6679 - val_loss: 0.8524 - learning_rate: 0.0010
+Epoch 14/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 442ms/step - accuracy: 0.6622 - loss: 0.8044 
+Epoch 14: val_loss improved from 0.85239 to 0.80357, saving model to models/cnn_lstm.keras
+67/67 ━━━━━━━━━━━━━━━━━━━━ 31s 470ms/step - accuracy: 0.6750 - loss: 0.7865 - val_accuracy: 0.6660 - val_loss: 0.8036 - learning_rate: 0.0010
+Epoch 15/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 443ms/step - accuracy: 0.7062 - loss: 0.7422 
+Epoch 15: val_loss improved from 0.80357 to 0.74710, saving model to models/cnn_lstm.keras
+67/67 ━━━━━━━━━━━━━━━━━━━━ 31s 468ms/step - accuracy: 0.7028 - loss: 0.7510 - val_accuracy: 0.6981 - val_loss: 0.7471 - learning_rate: 0.0010
+Epoch 16/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 436ms/step - accuracy: 0.7156 - loss: 0.7361 
+Epoch 16: val_loss improved from 0.74710 to 0.68207, saving model to models/cnn_lstm.keras
+67/67 ━━━━━━━━━━━━━━━━━━━━ 31s 462ms/step - accuracy: 0.7108 - loss: 0.7304 - val_accuracy: 0.7396 - val_loss: 0.6821 - learning_rate: 0.0010
+Epoch 17/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 442ms/step - accuracy: 0.7593 - loss: 0.6318 
+Epoch 17: val_loss improved from 0.68207 to 0.64737, saving model to models/cnn_lstm.keras
+67/67 ━━━━━━━━━━━━━━━━━━━━ 31s 467ms/step - accuracy: 0.7443 - loss: 0.6374 - val_accuracy: 0.7642 - val_loss: 0.6474 - learning_rate: 0.0010
+Epoch 18/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 444ms/step - accuracy: 0.7770 - loss: 0.5474 
+Epoch 18: val_loss improved from 0.64737 to 0.62527, saving model to models/cnn_lstm.keras
+67/67 ━━━━━━━━━━━━━━━━━━━━ 31s 469ms/step - accuracy: 0.7684 - loss: 0.5929 - val_accuracy: 0.7528 - val_loss: 0.6253 - learning_rate: 0.0010
+Epoch 19/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 446ms/step - accuracy: 0.7729 - loss: 0.5900 
+Epoch 19: val_loss did not improve from 0.62527
+67/67 ━━━━━━━━━━━━━━━━━━━━ 32s 471ms/step - accuracy: 0.7816 - loss: 0.5777 - val_accuracy: 0.7717 - val_loss: 0.6384 - learning_rate: 0.0010
+Epoch 20/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 439ms/step - accuracy: 0.7947 - loss: 0.5160 
+Epoch 20: val_loss improved from 0.62527 to 0.55102, saving model to models/cnn_lstm.keras
+67/67 ━━━━━━━━━━━━━━━━━━━━ 31s 464ms/step - accuracy: 0.7896 - loss: 0.5319 - val_accuracy: 0.7925 - val_loss: 0.5510 - learning_rate: 0.0010
+Epoch 21/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 448ms/step - accuracy: 0.7855 - loss: 0.5171 
+Epoch 21: val_loss improved from 0.55102 to 0.53870, saving model to models/cnn_lstm.keras
+67/67 ━━━━━━━━━━━━━━━━━━━━ 32s 473ms/step - accuracy: 0.7858 - loss: 0.5297 - val_accuracy: 0.8094 - val_loss: 0.5387 - learning_rate: 0.0010
+Epoch 22/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 438ms/step - accuracy: 0.8044 - loss: 0.5170 
+Epoch 22: val_loss improved from 0.53870 to 0.52610, saving model to models/cnn_lstm.keras
+67/67 ━━━━━━━━━━━━━━━━━━━━ 31s 464ms/step - accuracy: 0.8085 - loss: 0.5112 - val_accuracy: 0.7962 - val_loss: 0.5261 - learning_rate: 0.0010
+Epoch 23/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 444ms/step - accuracy: 0.8329 - loss: 0.4494 
+Epoch 23: val_loss improved from 0.52610 to 0.49627, saving model to models/cnn_lstm.keras
+67/67 ━━━━━━━━━━━━━━━━━━━━ 32s 473ms/step - accuracy: 0.8297 - loss: 0.4579 - val_accuracy: 0.8113 - val_loss: 0.4963 - learning_rate: 0.0010
+Epoch 24/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 443ms/step - accuracy: 0.8190 - loss: 0.4623 
+Epoch 24: val_loss did not improve from 0.49627
+67/67 ━━━━━━━━━━━━━━━━━━━━ 31s 467ms/step - accuracy: 0.8288 - loss: 0.4562 - val_accuracy: 0.8321 - val_loss: 0.5053 - learning_rate: 0.0010
+Epoch 25/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 436ms/step - accuracy: 0.8631 - loss: 0.3587 
+Epoch 25: val_loss did not improve from 0.49627
+67/67 ━━━━━━━━━━━━━━━━━━━━ 31s 462ms/step - accuracy: 0.8566 - loss: 0.3854 - val_accuracy: 0.8000 - val_loss: 0.5659 - learning_rate: 0.0010
+Epoch 26/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 444ms/step - accuracy: 0.8604 - loss: 0.4051 
+Epoch 26: val_loss did not improve from 0.49627
+67/67 ━━━━━━━━━━━━━━━━━━━━ 31s 468ms/step - accuracy: 0.8651 - loss: 0.3795 - val_accuracy: 0.8226 - val_loss: 0.5077 - learning_rate: 0.0010
+Epoch 27/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 443ms/step - accuracy: 0.8572 - loss: 0.4112 
+Epoch 27: val_loss did not improve from 0.49627
+67/67 ━━━━━━━━━━━━━━━━━━━━ 31s 468ms/step - accuracy: 0.8467 - loss: 0.4320 - val_accuracy: 0.7925 - val_loss: 0.5520 - learning_rate: 0.0010
+Epoch 28/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 449ms/step - accuracy: 0.8591 - loss: 0.3689 
+Epoch 28: val_loss improved from 0.49627 to 0.44016, saving model to models/cnn_lstm.keras
+67/67 ━━━━━━━━━━━━━━━━━━━━ 32s 474ms/step - accuracy: 0.8642 - loss: 0.3625 - val_accuracy: 0.8377 - val_loss: 0.4402 - learning_rate: 0.0010
+Epoch 29/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 437ms/step - accuracy: 0.8820 - loss: 0.3106 
+Epoch 29: val_loss did not improve from 0.44016
+67/67 ━━━━━━━━━━━━━━━━━━━━ 31s 461ms/step - accuracy: 0.8825 - loss: 0.3190 - val_accuracy: 0.8302 - val_loss: 0.5236 - learning_rate: 0.0010
+Epoch 30/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 451ms/step - accuracy: 0.8713 - loss: 0.3367 
+Epoch 30: val_loss improved from 0.44016 to 0.41698, saving model to models/cnn_lstm.keras
+67/67 ━━━━━━━━━━━━━━━━━━━━ 32s 476ms/step - accuracy: 0.8731 - loss: 0.3375 - val_accuracy: 0.8453 - val_loss: 0.4170 - learning_rate: 0.0010
+Epoch 31/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 437ms/step - accuracy: 0.8829 - loss: 0.3084 
+Epoch 31: val_loss did not improve from 0.41698
+67/67 ━━━━━━━━━━━━━━━━━━━━ 31s 461ms/step - accuracy: 0.8868 - loss: 0.3045 - val_accuracy: 0.8491 - val_loss: 0.4713 - learning_rate: 0.0010
+Epoch 32/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 448ms/step - accuracy: 0.8854 - loss: 0.3304 
+Epoch 32: val_loss did not improve from 0.41698
+67/67 ━━━━━━━━━━━━━━━━━━━━ 32s 472ms/step - accuracy: 0.8816 - loss: 0.3394 - val_accuracy: 0.8453 - val_loss: 0.4985 - learning_rate: 0.0010
+Epoch 33/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 441ms/step - accuracy: 0.8948 - loss: 0.3025 
+Epoch 33: val_loss improved from 0.41698 to 0.41693, saving model to models/cnn_lstm.keras
+67/67 ━━━━━━━━━━━━━━━━━━━━ 31s 467ms/step - accuracy: 0.8929 - loss: 0.2952 - val_accuracy: 0.8604 - val_loss: 0.4169 - learning_rate: 0.0010
+Epoch 34/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 436ms/step - accuracy: 0.8988 - loss: 0.2626 
+Epoch 34: val_loss did not improve from 0.41693
+67/67 ━━━━━━━━━━━━━━━━━━━━ 31s 462ms/step - accuracy: 0.9108 - loss: 0.2502 - val_accuracy: 0.8698 - val_loss: 0.4386 - learning_rate: 0.0010
+Epoch 35/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 438ms/step - accuracy: 0.9061 - loss: 0.2507 
+Epoch 35: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+
+Epoch 35: val_loss did not improve from 0.41693
+67/67 ━━━━━━━━━━━━━━━━━━━━ 31s 463ms/step - accuracy: 0.9057 - loss: 0.2584 - val_accuracy: 0.8660 - val_loss: 0.4226 - learning_rate: 0.0010
+Epoch 36/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 441ms/step - accuracy: 0.9264 - loss: 0.2230 
+Epoch 36: val_loss improved from 0.41693 to 0.41404, saving model to models/cnn_lstm.keras
+67/67 ━━━━━━━━━━━━━━━━━━━━ 31s 467ms/step - accuracy: 0.9203 - loss: 0.2295 - val_accuracy: 0.8792 - val_loss: 0.4140 - learning_rate: 5.0000e-04
+Epoch 37/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 445ms/step - accuracy: 0.9357 - loss: 0.1826 
+Epoch 37: val_loss improved from 0.41404 to 0.38676, saving model to models/cnn_lstm.keras
+67/67 ━━━━━━━━━━━━━━━━━━━━ 31s 470ms/step - accuracy: 0.9330 - loss: 0.1901 - val_accuracy: 0.8736 - val_loss: 0.3868 - learning_rate: 5.0000e-04
+Epoch 38/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 435ms/step - accuracy: 0.9309 - loss: 0.1900 
+Epoch 38: val_loss did not improve from 0.38676
+67/67 ━━━━━━━━━━━━━━━━━━━━ 31s 459ms/step - accuracy: 0.9316 - loss: 0.1875 - val_accuracy: 0.8755 - val_loss: 0.3882 - learning_rate: 5.0000e-04
+Epoch 39/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 453ms/step - accuracy: 0.9381 - loss: 0.1806 
+Epoch 39: val_loss did not improve from 0.38676
+67/67 ━━━━━━━━━━━━━━━━━━━━ 32s 477ms/step - accuracy: 0.9434 - loss: 0.1755 - val_accuracy: 0.8755 - val_loss: 0.3975 - learning_rate: 5.0000e-04
+Epoch 40/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 437ms/step - accuracy: 0.9456 - loss: 0.1543 
+Epoch 40: val_loss did not improve from 0.38676
+67/67 ━━━━━━━━━━━━━━━━━━━━ 31s 461ms/step - accuracy: 0.9495 - loss: 0.1516 - val_accuracy: 0.8962 - val_loss: 0.3892 - learning_rate: 5.0000e-04
+Epoch 41/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 448ms/step - accuracy: 0.9366 - loss: 0.1534 
+Epoch 41: val_loss did not improve from 0.38676
+67/67 ━━━━━━━━━━━━━━━━━━━━ 32s 472ms/step - accuracy: 0.9382 - loss: 0.1691 - val_accuracy: 0.8736 - val_loss: 0.4276 - learning_rate: 5.0000e-04
+Epoch 42/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 439ms/step - accuracy: 0.9521 - loss: 0.1576 
+Epoch 42: ReduceLROnPlateau reducing learning rate to 0.0002500000118743628.
+
+Epoch 42: val_loss did not improve from 0.38676
+67/67 ━━━━━━━━━━━━━━━━━━━━ 31s 463ms/step - accuracy: 0.9429 - loss: 0.1747 - val_accuracy: 0.8849 - val_loss: 0.4128 - learning_rate: 5.0000e-04
+Epoch 43/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 441ms/step - accuracy: 0.9546 - loss: 0.1412 
+Epoch 43: val_loss did not improve from 0.38676
+67/67 ━━━━━━━━━━━━━━━━━━━━ 31s 467ms/step - accuracy: 0.9566 - loss: 0.1342 - val_accuracy: 0.8830 - val_loss: 0.4028 - learning_rate: 2.5000e-04
+Epoch 44/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 443ms/step - accuracy: 0.9384 - loss: 0.1685 
+Epoch 44: val_loss improved from 0.38676 to 0.36164, saving model to models/cnn_lstm.keras
+67/67 ━━━━━━━━━━━━━━━━━━━━ 31s 469ms/step - accuracy: 0.9495 - loss: 0.1485 - val_accuracy: 0.8906 - val_loss: 0.3616 - learning_rate: 2.5000e-04
+Epoch 45/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 442ms/step - accuracy: 0.9577 - loss: 0.1399 
+Epoch 45: val_loss did not improve from 0.36164
+67/67 ━━━━━━━━━━━━━━━━━━━━ 31s 467ms/step - accuracy: 0.9604 - loss: 0.1283 - val_accuracy: 0.8830 - val_loss: 0.3727 - learning_rate: 2.5000e-04
+Epoch 46/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 443ms/step - accuracy: 0.9671 - loss: 0.1039 
+Epoch 46: val_loss did not improve from 0.36164
+67/67 ━━━━━━━━━━━━━━━━━━━━ 31s 467ms/step - accuracy: 0.9623 - loss: 0.1131 - val_accuracy: 0.8943 - val_loss: 0.3851 - learning_rate: 2.5000e-04
+Epoch 47/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 438ms/step - accuracy: 0.9586 - loss: 0.1413 
+Epoch 47: val_loss did not improve from 0.36164
+67/67 ━━━━━━━━━━━━━━━━━━━━ 31s 462ms/step - accuracy: 0.9575 - loss: 0.1278 - val_accuracy: 0.8925 - val_loss: 0.3719 - learning_rate: 2.5000e-04
+Epoch 48/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 449ms/step - accuracy: 0.9633 - loss: 0.1234 
+Epoch 48: val_loss did not improve from 0.36164
+67/67 ━━━━━━━━━━━━━━━━━━━━ 32s 473ms/step - accuracy: 0.9590 - loss: 0.1257 - val_accuracy: 0.9019 - val_loss: 0.3684 - learning_rate: 2.5000e-04
+Epoch 49/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 452ms/step - accuracy: 0.9617 - loss: 0.1085 
+Epoch 49: val_loss improved from 0.36164 to 0.35448, saving model to models/cnn_lstm.keras
+67/67 ━━━━━━━━━━━━━━━━━━━━ 32s 478ms/step - accuracy: 0.9613 - loss: 0.1127 - val_accuracy: 0.8981 - val_loss: 0.3545 - learning_rate: 2.5000e-04
+Epoch 50/50
+67/67 ━━━━━━━━━━━━━━━━━━━━ 0s 451ms/step - accuracy: 0.9683 - loss: 0.0890 
+Epoch 50: val_loss did not improve from 0.35448
+67/67 ━━━━━━━━━━━━━━━━━━━━ 32s 476ms/step - accuracy: 0.9651 - loss: 0.0949 - val_accuracy: 0.8906 - val_loss: 0.3825 - learning_rate: 2.5000e-04
+
+✅ Final model saved at models/cnn_lstm.keras
+
+🔍 COMPREHENSIVE EVALUATION - ALL CLASSES
+=============================================
+Overall accuracy: 0.8981 (89.8%)
+
+📊 PREDICTION DISTRIBUTION:
+  belly_pain  :  87/530 ( 16.4%)
+  burping     :  83/530 ( 15.7%)
+  discomfort  : 164/530 ( 30.9%)
+  hungry      :  58/530 ( 10.9%)
+  tired       : 138/530 ( 26.0%)
+
+🎯 CLASSES ACTUALLY PREDICTED: 5/5
+
+📋 PER-CLASS PERFORMANCE:
+✅ belly_pain  : 82/89 ( 92.1%) | Precision: 0.943
+✅ burping     : 81/86 ( 94.2%) | Precision: 0.976
+✅ discomfort  : 137/144 ( 95.1%) | Precision: 0.835
+✅ hungry      : 54/76 ( 71.1%) | Precision: 0.931
+✅ tired       : 122/135 ( 90.4%) | Precision: 0.884
+
+
+
+
+Model: "sequential"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┓
+┃ Layer (type)                         ┃ Output Shape                ┃         Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━┩
+│ conv2d (Conv2D)                      │ (None, 38, 298, 32)         │             320 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ batch_normalization                  │ (None, 38, 298, 32)         │             128 │
+│ (BatchNormalization)                 │                             │                 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ max_pooling2d (MaxPooling2D)         │ (None, 19, 149, 32)         │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dropout (Dropout)                    │ (None, 19, 149, 32)         │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ conv2d_1 (Conv2D)                    │ (None, 17, 147, 64)         │          18,496 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ batch_normalization_1                │ (None, 17, 147, 64)         │             256 │
+│ (BatchNormalization)                 │                             │                 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ max_pooling2d_1 (MaxPooling2D)       │ (None, 8, 73, 64)           │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dropout_1 (Dropout)                  │ (None, 8, 73, 64)           │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ reshape (Reshape)                    │ (None, 584, 64)             │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ lstm (LSTM)                          │ (None, 64)                  │          33,024 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dropout_2 (Dropout)                  │ (None, 64)                  │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dense (Dense)                        │ (None, 64)                  │           4,160 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dropout_3 (Dropout)                  │ (None, 64)                  │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dense_1 (Dense)                      │ (None, 5)                   │             325 │
+└──────────────────────────────────────┴─────────────────────────────┴─────────────────┘
+ Total params: 56,709 (221.52 KB)
+ Trainable params: 56,517 (220.77 KB)
+ Non-trainable params: 192 (768.00 B)

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CryFusion - Dashboard</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div id="navbar"></div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse" id="sidebar">
+        <div id="sidebar-content"></div>
+      </div>
+
+      <!-- Main Content -->
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-4">
+        <h2 class="mb-4">Dashboard Overview</h2>
+
+        <!-- Real-time Stats Cards -->
+        <div class="row g-4 mb-5">
+          <div class="col-md-2">
+            <div class="card text-white bg-primary">
+              <div class="card-body text-center">
+                <h6 class="card-title">Total Cries</h6>
+                <h3 id="total-cries">--</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card text-white bg-success">
+              <div class="card-body text-center">
+                <h6 class="card-title">Heart Rate</h6>
+                <h3 id="heart-rate">--</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card text-white bg-info">
+              <div class="card-body text-center">
+                <h6 class="card-title">Temperature</h6>
+                <h3 id="temperature">--</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card text-white bg-warning">
+              <div class="card-body text-center">
+                <h6 class="card-title">Diaper</h6>
+                <h3 id="diaper-status">--</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card text-white bg-secondary">
+              <div class="card-body text-center">
+                <h6 class="card-title">Last Cry</h6>
+                <h3 id="last-cry-type">--</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card text-white bg-dark">
+              <div class="card-body text-center">
+                <h6 class="card-title">Time</h6>
+                <h3 id="last-cry-time">--</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cry Frequency Chart -->
+        <div class="row mb-5">
+          <div class="col-12">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Cry Frequency (Last 24 Hours)</h5>
+                <canvas id="cryChart" height="100"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Cry Analysis Card -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card shadow-sm h-100">
+              <div class="card-body">
+                <h5 class="card-title">Cry Analysis</h5>
+                <p class="card-text">Upload or record baby cries for real-time classification using our CNN-LSTM model.</p>
+                <a href="cry_analysis.html" class="btn btn-primary">Go to Cry Analysis</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Health Monitoring Card -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card shadow-sm h-100">
+              <div class="card-body">
+                <h5 class="card-title">Health Monitoring</h5>
+                <p class="card-text">Track baby vitals such as temperature, heart rate, and diaper status in real-time.</p>
+                <a href="health.html" class="btn btn-success">Go to Health</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gemini Chat Card -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card shadow-sm h-100">
+              <div class="card-body">
+                <h5 class="card-title">Gemini AI Chat</h5>
+                <p class="card-text">Ask questions, get instant answers, and receive intelligent insights for baby care.</p>
+                <a href="gemini_chat.html" class="btn btn-warning">Go to Chat</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Future Expansion Section -->
+        <div class="row mt-5">
+          <div class="col">
+            <div class="alert alert-info shadow-sm">
+              <h5 class="alert-heading">Coming Soon 🚀</h5>
+              <p>We’re working on integrating <b>Grad-CAM visualizations</b> and <b>real-time sensor fusion</b> into the dashboard.</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="../assets/js/app.js"></script>
+  <script src="../js/dashboard.js"></script>
+</body>
+</html>

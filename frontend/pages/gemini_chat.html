@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CryFusion - Gemini AI Chat</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div id="navbar"></div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse" id="sidebar">
+        <div id="sidebar-content"></div>
+      </div>
+
+      <!-- Main Content -->
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-4">
+        <h2 class="mb-4">Gemini AI Chat</h2>
+        
+        <div class="row">
+          <div class="col-md-8">
+            <!-- Chat Interface -->
+            <div class="card shadow-sm">
+              <div class="card-header bg-primary text-white">
+                <h5 class="mb-0"><i class="bi bi-robot"></i> Baby Care AI Assistant</h5>
+              </div>
+              <div class="card-body" style="height: 500px; overflow-y: auto;" id="chatContainer">
+                <div class="chat-message ai-message mb-3">
+                  <div class="d-flex align-items-start">
+                    <div class="avatar bg-primary text-white rounded-circle p-2 me-2">
+                      <i class="bi bi-robot"></i>
+                    </div>
+                    <div class="message-content">
+                      <div class="message-bubble bg-light p-3 rounded">
+                        <p class="mb-0">Hello! I'm your AI baby care assistant. I can help you with:</p>
+                        <ul class="mb-0 mt-2">
+                          <li>Understanding baby cries and their meanings</li>
+                          <li>Health monitoring and safety tips</li>
+                          <li>Feeding and sleep schedules</li>
+                          <li>Development milestones</li>
+                          <li>Emergency situations</li>
+                        </ul>
+                        <p class="mb-0 mt-2">What would you like to know about?</p>
+                      </div>
+                      <small class="text-muted">Just now</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <form id="chatForm" class="d-flex">
+                  <input type="text" class="form-control me-2" id="messageInput" placeholder="Ask me anything about baby care..." required>
+                  <button type="submit" class="btn btn-primary">
+                    <i class="bi bi-send"></i> Send
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <!-- Quick Actions -->
+            <div class="card shadow-sm mb-3">
+              <div class="card-header bg-success text-white">
+                <h6 class="mb-0"><i class="bi bi-lightning"></i> Quick Questions</h6>
+              </div>
+              <div class="card-body">
+                <div class="d-grid gap-2">
+                  <button class="btn btn-outline-success btn-sm quick-question" data-question="Why is my baby crying?">
+                    Why is my baby crying?
+                  </button>
+                  <button class="btn btn-outline-success btn-sm quick-question" data-question="What's a normal temperature for a baby?">
+                    Normal baby temperature?
+                  </button>
+                  <button class="btn btn-outline-success btn-sm quick-question" data-question="How often should I feed my baby?">
+                    Feeding frequency?
+                  </button>
+                  <button class="btn btn-outline-success btn-sm quick-question" data-question="When should I call the doctor?">
+                    When to call doctor?
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Recent Cry Analysis -->
+            <div class="card shadow-sm">
+              <div class="card-header bg-info text-white">
+                <h6 class="mb-0"><i class="bi bi-music-note"></i> Recent Cry Analysis</h6>
+              </div>
+              <div class="card-body">
+                <div id="recentCries">
+                  <p class="text-muted small">No recent cry analysis</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/script.js"></script>
+  <script src="../js/gemini_chat.js"></script>
+</body>
+</html>
