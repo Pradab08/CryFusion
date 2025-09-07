@@ -1,5 +1,0 @@
-{
-  "feature_shape": [156, 13],
-  "num_classes": 5,
-  "class_names": ["belly_pain", "burping", "discomfort", "hungry", "tired"]
-}
