@@ -1,0 +1,13 @@
+{
+  "original_samples": 901,
+  "augmented_samples": 1667,
+  "augmentation_factor": 1.8501664816870145,
+  "target_accuracy": "50-60%",
+  "techniques": [
+    "time_stretching",
+    "noise_addition",
+    "frequency_masking",
+    "time_masking",
+    "pitch_shifting"
+  ]
+}
